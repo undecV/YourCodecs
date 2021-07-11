@@ -1,24 +1,31 @@
+<!-- The codes modify from [erkserkserks/h264ify](https://github.com/erkserkserks/h264ify), released under MIT Licence. -->
+
 <!DOCTYPE html>
 <html>
-   <head>
-      <title data-l10n-id="optionsTitle"></title>
-      <style>
-        ul {
-          list-style: none;
-          padding-left:0;
-        }
-        body {
-        white-space:nowrap;
-        }
-      </style>
-   </head>
-   <body>
-      <h1 data-l10n-id="optionsTitle"></h1>
-      <ul>
-         <li><input type="checkbox" id="enable" class="checkbox"><label for="enable" data-l10n-id="optionsEnable"></label></li>
-         <li><input type="checkbox" id="block_60fps" class="checkbox"><label for="block_60fps" data-l10n-id="optionsBlock60fps"></label></li>
-         <li><input type="checkbox" id="battery_only" class="checkbox"><label for="battery_only" data-l10n-id="optionsBatteryOnly"></label></li>
-      </ul>
-      <script src="options.js"></script>
-   </body>
+    <head>
+        <title data-l10n-id="optionsTitle"></title>
+        <style>
+            html, body {background: #1d1f21; color: #c5c8c6;}
+            body { white-space: nowrap; font-family: sans-serif;}
+            ul { list-style: none; padding-left: 0; }
+            .titleBanner {text-align:center;color:#cc6666;}
+            #BlockCodecs li {display: inline-block;}
+        </style>
+    </head>
+    <body>
+        <div class="titleBanner">
+            <h1 id="title_1" data-l10n-id="optionsTitle"></h1>
+        </div>
+        <ul>
+            <li><input type="checkbox" id="enable" class="checkbox"><label for="enable" data-l10n-id="optionsEnable"></label></li>
+            <li><input type="checkbox" id="block_60fps" class="checkbox"><label for="block_60fps" data-l10n-id="optionsBlock60fps"></label></li>
+        </ul>
+        <p data-l10n-id="optionsBlockCodecs"></p>
+        <ul id='BlockCodecs'>
+            <li><input type="checkbox" id="block_vp8" class="checkbox"><label for="block_vp8" data-l10n-id="optionsBlockCodecsVP8"></label></li>
+            <li><input type="checkbox" id="block_vp9" class="checkbox"><label for="block_vp9" data-l10n-id="optionsBlockCodecsVP9"></label></li>
+            <li><input type="checkbox" id="block_av1" class="checkbox"><label for="block_av1" data-l10n-id="optionsBlockCodecsAV1"></label></li>
+        </ul>
+        <script src="options.js"></script>
+    </body>
 </html>

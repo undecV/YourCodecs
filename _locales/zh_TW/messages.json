@@ -1,17 +1,17 @@
 {
   "extensionName": {
-    "message": "Your Codecs.",
+    "message": "你的編碼",
     "description": "Name of the extension."
   },
   "extensionDescription": {
-    "message": "Select video codecs for YouTube.",
+    "message": "在茫茫影片中，尋找從未支援的編碼。",
     "description": "Extension description"
   },
 
   "optionsTitle": {"message": "YourCodecs"},
-  "optionsEnable": {"message": "Enable"},
-  "optionsBlock60fps": {"message": "Block 60 FPS"},
-  "optionsBlockCodecs": {"message": "Block Codecs:"},
+  "optionsEnable": {"message": "啟用"},
+  "optionsBlock60fps": {"message": "不允許 60 FPS"},
+  "optionsBlockCodecs": {"message": "不允許的編碼:"},
   "optionsBlockCodecsVP8": {"message": "VP8"},
   "optionsBlockCodecsVP9": {"message": "VP9"},
   "optionsBlockCodecsAV1": {"message": "AV1"}

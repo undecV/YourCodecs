@@ -1,4 +1,8 @@
 /**
+ * The codes modify from [erkserkserks/h264ify](https://github.com/erkserkserks/h264ify), released under MIT Licence.
+ */
+
+/**
  * The MIT License (MIT)
  *
  * Copyright (c) 2015 erkserkserks
@@ -27,38 +31,47 @@
 // script into the DOM.
 
 // Set defaults for options stored in localStorage
-if (localStorage['h264ify-enable'] === undefined) {
-  localStorage['h264ify-enable'] = true;
+if (localStorage['yourcodecs-enable'] === undefined) {
+  localStorage['yourcodecs-enable'] = true;
 }
-if (localStorage['h264ify-block_60fps'] === undefined) {
-  localStorage['h264ify-block_60fps'] = false;
+if (localStorage['yourcodecs-block_60fps'] === undefined) {
+  localStorage['yourcodecs-block_60fps'] = false;
 }
-if (localStorage['h264ify-battery_only'] === undefined) {
-  localStorage['h264ify-battery_only'] = false;
+if (localStorage['yourcodecs-block_vp8'] === undefined) {
+  localStorage['yourcodecs-block_vp8'] = false;
+}
+if (localStorage['yourcodecs-block_vp9'] === undefined) {
+  localStorage['yourcodecs-block_vp9'] = false;
+}
+if (localStorage['yourcodecs-block_av1'] === undefined) {
+  localStorage['yourcodecs-block_av1'] = false;
 }
 
 // Cache chrome.storage.local options in localStorage.
 // This is needed because chrome.storage.local.get() is async and we want to
 // load the injection script immediately.
 // See https://bugs.chromium.org/p/chromium/issues/detail?id=54257
-chrome.storage.local.get({
+browser.storage.local.get({
   // Set defaults
   enable: true,
   block_60fps: false,
-  battery_only: false,
- }, function(options) {
-   localStorage['h264ify-enable'] = options.enable;
-   localStorage['h264ify-block_60fps'] = options.block_60fps;
-   localStorage['h264ify-battery_only'] = options.battery_only;
- }
+  block_vp8: false,
+  block_vp9: false,
+  block_av1: false,
+}, function (options) {
+  localStorage['yourcodecs-enable'] = options.enable;
+  localStorage['yourcodecs-block_60fps'] = options.block_60fps;
+  localStorage['yourcodecs-block_vp8'] = options.block_vp8;
+  localStorage['yourcodecs-block_vp9'] = options.block_vp9;
+  localStorage['yourcodecs-block_av1'] = options.block_av1;
+}
 );
 
 var injectScript = document.createElement('script');
 // Use textContent instead of src to run inject() synchronously
 injectScript.textContent = inject.toString() + "inject();";
-injectScript.onload = function() {
+injectScript.onload = function () {
   // Remove <script> node after injectScript runs.
   this.parentNode.removeChild(this);
 };
 (document.head || document.documentElement).appendChild(injectScript);
-
