@@ -1,4 +1,4 @@
-# YourCodecs 你的編碼
+# ![icon](./icons/icon32.png) YourCodecs 你的編碼
 
 <del>在茫茫影片中，尋找從未支援的編碼。</del>
 

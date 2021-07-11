@@ -1,4 +1,4 @@
-# YourCodecs
+# ![icon](./icons/icon32.png) YourCodecs
 
 [正體中文](./README.zh_TW.md)
 
