@@ -4,7 +4,9 @@
 
 Select video codecs for YouTube. Force to play YouTube videos with H.264 (AVC), VP9, AV1 codec.
 
-## Feature
+![Install](https://addons.mozilla.org/firefox/addon/your-codecs/)
+
+## Features
 
 - Optional select the codecs which want to block, VP8, VP9, and AV1 (If you choose that all, YouTube may send you H.264 (AVC));
 - Optional block 60 FPS.
