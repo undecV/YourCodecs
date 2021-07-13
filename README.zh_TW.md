@@ -4,7 +4,9 @@
 
 [English](./README.md)
 
-選擇 YouTube 的影片編碼。強制 YouTube 使用 H.264 (AVC), VP9, AV1 視訊編碼。
+這是一個 Firefox 擴充套件，可以讓您選擇 YouTube 的影片編碼。強制 YouTube 使用 H.264 (AVC), VP9, AV1 視訊編碼。
+
+[![安裝擴充套件](./DOCS/get-the-addon.png)](https://addons.mozilla.org/firefox/addon/your-codecs/)
 
 ## 功能
 

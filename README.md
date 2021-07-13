@@ -2,9 +2,9 @@
 
 [正體中文](./README.zh_TW.md)
 
-Select video codecs for YouTube. Force to play YouTube videos with H.264 (AVC), VP9, AV1 codec.
+A Firefox extension can select video codecs for YouTube. Force to play YouTube videos with H.264 (AVC), VP9, AV1 codec.
 
-![Install](https://addons.mozilla.org/firefox/addon/your-codecs/)
+[![Install](./DOCS/get-the-addon.png)](https://addons.mozilla.org/firefox/addon/your-codecs/)
 
 ## Features
 
