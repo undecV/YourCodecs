@@ -11,7 +11,8 @@
   "optionsTitle": {"message": "YourCodecs"},
   "optionsEnable": {"message": "啟用"},
   "optionsBlock60fps": {"message": "不允許 60 FPS"},
-  "optionsBlockCodecs": {"message": "不允許的編碼:"},
+  "optionsBlockCodecs": {"message": "不允許的編碼："},
+  "optionsBlockCodecsAVC": {"message": "AVC"},
   "optionsBlockCodecsVP8": {"message": "VP8"},
   "optionsBlockCodecsVP9": {"message": "VP9"},
   "optionsBlockCodecsAV1": {"message": "AV1"}

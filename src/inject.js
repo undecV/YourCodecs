@@ -57,6 +57,7 @@ function inject() {
       if (type === undefined) return '';
       // var disallowed_types = ['webm', 'vp8', 'vp9', 'av01'];
       var disallowed_types = [];
+      if (localStorage['yourcodecs-block_avc'] === 'true') disallowed_types = disallowed_types.concat(['avc', 'avc1']);
       if (localStorage['yourcodecs-block_vp8'] === 'true') disallowed_types = disallowed_types.concat(['vp8', 'vp08']);
       if (localStorage['yourcodecs-block_vp9'] === 'true') disallowed_types = disallowed_types.concat(['vp9', 'vp09']);
       if (localStorage['yourcodecs-block_av1'] === 'true') disallowed_types = disallowed_types.concat(['av1', 'av01']);

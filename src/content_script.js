@@ -37,6 +37,9 @@ if (localStorage['yourcodecs-enable'] === undefined) {
 if (localStorage['yourcodecs-block_60fps'] === undefined) {
   localStorage['yourcodecs-block_60fps'] = false;
 }
+if (localStorage['yourcodecs-block_avc'] === undefined) {
+  localStorage['yourcodecs-block_avc'] = false;
+}
 if (localStorage['yourcodecs-block_vp8'] === undefined) {
   localStorage['yourcodecs-block_vp8'] = false;
 }
@@ -55,12 +58,14 @@ browser.storage.local.get({
   // Set defaults
   enable: true,
   block_60fps: false,
+  block_avc: false,
   block_vp8: false,
   block_vp9: false,
   block_av1: false,
 }, function (options) {
   localStorage['yourcodecs-enable'] = options.enable;
   localStorage['yourcodecs-block_60fps'] = options.block_60fps;
+  localStorage['yourcodecs-block_avc'] = options.block_avc;
   localStorage['yourcodecs-block_vp8'] = options.block_vp8;
   localStorage['yourcodecs-block_vp9'] = options.block_vp9;
   localStorage['yourcodecs-block_av1'] = options.block_av1;

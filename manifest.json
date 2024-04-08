@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/undecV/YourCodecs",
   "icons": {
@@ -22,7 +22,7 @@
       "128": "icons/icon128.png"
     },
     "default_title": "__MSG_extensionName__",
-    "default_popup": "options.html"
+    "default_popup": "src/options.html"
   },
   "content_scripts": [
     {
@@ -41,7 +41,7 @@
   ],
   "default_locale": "en",
   "options_ui": {
-    "page": "options.html"
+    "page": "src/options.html"
   },
   "permissions": [
     "storage"

@@ -12,6 +12,7 @@
   "optionsEnable": {"message": "Enable"},
   "optionsBlock60fps": {"message": "Block 60 FPS"},
   "optionsBlockCodecs": {"message": "Block Codecs:"},
+  "optionsBlockCodecsAVC": {"message": "AVC"},
   "optionsBlockCodecsVP8": {"message": "VP8"},
   "optionsBlockCodecsVP9": {"message": "VP9"},
   "optionsBlockCodecsAV1": {"message": "AV1"}

@@ -6,12 +6,14 @@
 function save_options() {
   var enable = document.getElementById('enable').checked;
   var block_60fps = document.getElementById('block_60fps').checked;
+  var block_avc = document.getElementById('block_avc').checked;
   var block_vp8 = document.getElementById('block_vp8').checked;
   var block_vp9 = document.getElementById('block_vp9').checked;
   var block_av1 = document.getElementById('block_av1').checked;
   browser.storage.local.set({
     enable: enable,
     block_60fps: block_60fps,
+    block_avc: block_avc,
     block_vp8: block_vp8,
     block_vp9: block_vp9,
     block_av1: block_av1,
@@ -24,12 +26,14 @@ function restore_options() {
   browser.storage.local.get({
     enable: true,
     block_60fps: false,
+    block_avc: false,
     block_vp8: false,
     block_vp9: false,
     block_av1: false,
   }, function(options) {
     document.getElementById('enable').checked = options.enable;
     document.getElementById('block_60fps').checked = options.block_60fps;
+    document.getElementById('block_avc').checked = options.block_avc;
     document.getElementById('block_vp8').checked = options.block_vp8;
     document.getElementById('block_vp9').checked = options.block_vp9;
     document.getElementById('block_av1').checked = options.block_av1;
