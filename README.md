@@ -4,7 +4,7 @@
 
 Why do some YouTube videos make the browser freeze, the computer heat up, and the cooling fans spin like it's about to take off? It's possible that the video selected a codec that your computer doesn't support.
 
-A Firefox extension can select video codecs for YouTube. Force to play YouTube videos with H.264 (AVC), VP9, AV1 codec.
+This is a Firefox extension that can select video codecs for YouTube. Force to play YouTube videos with H.264 (AVC), VP9, and AV1 codec.
 
 [![Install](./DOCS/get-the-addon.png)](https://addons.mozilla.org/firefox/addon/your-codecs/)
 
